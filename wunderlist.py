@@ -4,8 +4,8 @@ import argparse
 # 
 # Configure this two variables with you app info from Wunderlist API service
 #
-CLIENT_ID = "PUT_YOUR_CLIENT_ID_HERE"
-ACCESS_TOKEN = "PUT_YOUR_ACCESS_TOKEN_HERE"
+CLIENT_ID = "PON_AQUI_TU_CLIENT_ID"
+ACCESS_TOKEN = "PON_AQUI_TU_ACCESS_TOKEN"
 #
 
 LISTS_ENDPOINT = "https://a.wunderlist.com/api/v1/lists"
@@ -20,14 +20,14 @@ headers = {
 def main():
 
 	parser = argparse.ArgumentParser()
-	parser.add_argument("-t", "--task", help="Task name", type=str)
-	parser.add_argument("-f", "--textfile", help="File with tasks", type=str)
+	parser.add_argument("-t", "--tarea", help="Nombre de la tarea", type=str)
+	parser.add_argument("-f", "--fichero", help="Fichero con tareas", type=str)
 
 	args = parser.parse_args()
 
 	# Comprombar si no hay argumentos
-	if not (args.task or args.textfile):
-		parser.error('Use -t for creating single task or -f to use a textfile to generate tasks automatically')
+	if not (args.tarea or args.fichero):
+		parser.error('Utiliza -t para crear tareas individuales o -f para cargar masivamente tareas desde un fichero de texto')
 
  	# Obtenemos el inbox del usuario
 	response = requests.get(LISTS_ENDPOINT, headers=headers)
@@ -38,7 +38,7 @@ def main():
                 	inbox_id = item["id"]
 
 	# Crear una tarea por nombre
-	if args.task:
+	if args.tarea:
 			
 		params = {
 			'list_id': inbox_id,
@@ -47,7 +47,7 @@ def main():
 		response = requests.post(TASKS_ENDPOINT, json=params, headers=headers)
 
 	# Crear tareas desde archivo de texto
-	if args.textfile:
+	if args.fichero:
 
 		with open(args.textfile) as file:
 			content = file.readlines()
