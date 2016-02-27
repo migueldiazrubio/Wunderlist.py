@@ -7,7 +7,7 @@ Un script de consola escrito en python para crear tareas de forma individual y m
 2. Crea una nueva app desde el menú **Register your app**. Utiliza el nombre y descripción que desees
 3. Teclea "http://www.wunderlist.com" en los campos **APP URL** y **AUTH CALLBACK URL**
 4. Una vez creada la app, genera un **Access Token** manualmente
-5. Abre el fichero wunderlist.py en tu editor favorito
+5. Abre el fichero **wunderlist.py** en tu editor favorito
 6. Modifica las siguientes dos lineas para incluir la información que acabas de generar para tu app
 
 ```python
