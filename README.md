@@ -11,8 +11,8 @@ Un script de consola escrito en python para crear tareas de forma individual y m
 6. Modifica las siguientes dos lineas para incluir la información que acabas de generar para tu app
 
 ```python
-   CLIENT_ID = "PUT_YOUR_CLIENT_ID_HERE"
-   ACCESS_TOKEN = "PUT_YOUR_ACCESS_TOKEN_HERE"
+   CLIENT_ID = "PON_AQUI_TU_CLIENT_ID"
+   ACCESS_TOKEN = "PON_AQUI_TU_ACCESS_TOKEN"
 ```
 
 ## Utilizar el script
