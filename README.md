@@ -10,8 +10,10 @@ Un script de consola escrito en python para crear tareas de forma individual y m
 5. Abre el fichero wunderlist.py en tu editor favorito
 6. Modifica las siguientes dos lineas para incluir la información que acabas de generar para tu app
 
+```python
    CLIENT_ID = "PUT_YOUR_CLIENT_ID_HERE"
    ACCESS_TOKEN = "PUT_YOUR_ACCESS_TOKEN_HERE"
+```
 
 ## Utilizar el script
 
@@ -19,8 +21,12 @@ El script cuenta con dos opciones:
 
 - Creación de tareas de forma individual
 
+```python
    python3 wunderlist.py -t "Nombre de la tarea a crear"
+```
 
 - Creación de tareas de forma masiva desde un fichero de texto (una línea por tarea)
 
+```python
    python3 wunderlist.py -f nombre_del_fichero
+```
