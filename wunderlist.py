@@ -42,7 +42,7 @@ def main():
 			
 		params = {
 			'list_id': inbox_id,
-			'title': args.task
+			'title': args.tarea
 		}
 		response = requests.post(TASKS_ENDPOINT, json=params, headers=headers)
 
