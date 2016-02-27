@@ -22,7 +22,7 @@ El script cuenta con dos opciones:
 - Creación de tareas de forma individual
 
 ```python
-   python3 wunderlist.py -t "Nombre de la tarea a crear"
+   python3 wunderlist.py -t "Nombre de la tarea"
 ```
 
 - Creación de tareas de forma masiva desde un fichero de texto (una línea por tarea)
