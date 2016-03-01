@@ -1,4 +1,4 @@
-# WunderlistPython
+# Wunderlist.py
 Un script de consola escrito en python para crear tareas de forma individual y masiva en tu cuenta de Wunderlist
 
 ## Configurar el script
